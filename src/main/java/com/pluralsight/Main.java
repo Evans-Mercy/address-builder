@@ -40,12 +40,12 @@ public class Main {
         StringBuilder sb = new StringBuilder();
 
         //add full name first
-        sb.append(fullName).append("\n");
+        sb.append(fullName).append("\n");  //appends full name and a new line
 
         //add billing address
         sb.append("Billing Address: \n");
         sb.append(billingStreet).append("\n");
-        sb.append(billingCity).append(",")
+        sb.append(billingCity).append(", ")  //appends billing city and a comma plus space
             .append(billingState).append(" ")
             .append(billingZipCode).append("\n\n");  // \n\n adds a blank line
 
@@ -53,7 +53,7 @@ public class Main {
         sb.append("Shipping Address: \n");
         sb.append(shippingStreet).append("\n");
         sb.append(shippingCity).append(",")
-          .append(shippingState).append(" ")
+          .append(shippingState).append(" ") //appends to the same line (city)
           .append(shippingZip).append("\n");
 
         //Display
